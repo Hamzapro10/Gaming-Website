@@ -1,0 +1,310 @@
+* {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.maincontent {
+    text-align: center;
+    background-image: url(Images/background.jpg);
+    height: 750px;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.navbar a {
+    color: aliceblue;
+    margin: 32px;
+    text-decoration: none;
+}
+
+div.navbar button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+div.details {
+    text-align: center; padding-top: 150px;
+    color: white;
+}
+
+div.details button {
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: white;
+    color: darkturquoise;
+} 
+
+
+div.Other {
+    background: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.UpComing h1 {
+    text-align: center;
+}
+
+
+div.games {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    padding: 0px;
+}
+
+div.game {
+    text-align: center;
+    color: aliceblue;
+}
+
+div.game img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+div.maingame {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 50px;
+    border-radius: 26px;
+    margin-top: 0px;
+    line-height: 23px;
+}
+
+div.maingame button {
+    padding: 10px;
+    border-radius: 12px;
+    border: 3px  solid white;
+    background-color: aqua;
+    color: black;
+    font-size: 25px;
+    border: none;
+}
+
+div.maingame img {
+    margin-right: -150px;
+    border-radius: 42px;
+}
+
+.gradient-border-button {
+    position: relative;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(to right, blue, aqua);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gradient-border-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, blue, aqua);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.gradient-border-button:hover::before {
+    background: linear-gradient(to right, aqua, blue);
+}
+
+div.posts {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+div.postscontent h1, div.postscontent p{
+    text-align: center;
+}
+
+div.post {
+    margin: 25px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+div.post img {
+    border-radius: 10px;
+}
+
+div.post h2 {
+    padding: 8px;
+}
+
+div.post p {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+div.post p, div.post h5{
+    display: inline-block;
+}
+
+div.testis {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+div.test h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.testi {
+    margin: 25px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+div.testi img {
+    width: 100px;
+    background-color: goldenrod;
+    height: 100px;
+    margin: auto;
+    border-radius: 100px;
+    margin-top: 0px;
+    border: 3px solid black;
+}
+
+div.Pricing h1 {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+div.Prices {
+    display: flex;
+    justify-content: center;
+    width: 64%;
+    margin: auto;
+    text-align: center;
+}
+
+div.Price {
+    width: 30%;
+    background-color: darkcyan;
+    color: aliceblue;
+    margin: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 16px;
+}
+
+button.buy {
+    padding: 16px;
+    border-radius: 12px;
+    border: 4px solid white;
+    background-color: white;
+    color: darkcyan;
+}
+
+div.planPrice {
+    background-color: darkblue;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.planPrice h3 {
+    margin: 0px;
+}
+
+.JoinForm .image {
+    background-image: url(Images/SignUp.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    padding: 16px;
+}
+
+.joinform {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 64%;
+    border: 1px dashed darkgrey;
+    border-radius: 10px;
+}
+
+div.image {
+  width: 35%  
+}
+
+.image {
+    background-image: url(Images/SignUp.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 700px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+}
+
+.form {
+    
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid cadetblue;
+    border-radius: 5px;
+    display: block;
+    margin: 10px;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+form button {
+    background-color: blueviolet;
+    color: aliceblue;
+}
