@@ -1,40 +1,119 @@
 <!DOCTYPE html>
-
 <html>
-    
-    <head>
-        <title>Sign In</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-            
-        <div class="navbar">
-            <img src="Images/logo.png" width="100px">
-            <a href="Index.html">HOME</a>
-            <a href="">GALLERY</a>
-            <a href="">GAMES</a>
-            <a href="">NEWS</a>
-            <a href="">CONTACT</a>
-            <a class="gradient-border-button" href="SignUp.html" target="_blank">JOIN US NOW</a>
+
+<head>
+    <title>Sign In</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: aliceblue;
+            margin: 32px;
+            text-decoration: none;
+        }
+
+        .navbar button {
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+        }
+
+        .joinform {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 64%;
+            border: 1px dashed darkgrey;
+            border-radius: 10px;
+        }
+
+        .image {
+            background-image: url(Images/SignUp.jpg);
+            background-size: cover;
+            background-position: top;
+            height: 700px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 15px;
+            width: 35%;
+        }
+
+        .form {
+            width: 65%;
+        }
+
+        form input,
+        form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 3px solid cadetblue;
+            border-radius: 5px;
+            display: block;
+            margin: 10px;
+        }
+
+        form {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        form button {
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="Images/logo.png" width="100px">
+        <a href="Index.html">HOME</a>
+        <a href="">GALLERY</a>
+        <a href="">GAMES</a>
+        <a href="">NEWS</a>
+        <a href="">CONTACT</a>
+        <a class="gradient-border-button" href="SignUp.html" target="_blank">JOIN US NOW</a>
+    </div>
+
+    <div class="joinform">
+        <div class="image"></div>
+        <div class="form">
+            <form>
+                <p>Username</p>
+                <input type="text">
+                <p>Email</p>
+                <input type="email">
+                <p>Password</p>
+                <input type="password">
+                <button>JOIN US</button>
+            </form>
         </div>
-        
-        <div class="joinform">
-            <div class="image"></div>
-            <div class="form">
-                <form>
-                    <p>Username</p>
-                    <input type="text">
-                    <p>Email</p>
-                    <input type="email">
-                    <p>Password</p>
-                    <input type="password">
-                    <button>JOIN US</button>
-                </form>
-            </div>
-        </div>
-        
-    </body>
-    
+    </div>
+
+</body>
+
 </html>
